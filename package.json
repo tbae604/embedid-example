@@ -1,0 +1,16 @@
+{
+  "name": "embedit-example2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "node backend.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "trulioo-embedid-middleware": "0.0.2-beta"
+  }
+}

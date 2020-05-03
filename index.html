@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EmbedID Example</title>
+</head>
+<body>
+    <div id="trulioo-embedid"></div>
+
+    <!-- This script renders the EmbedID form into the div above -->
+    <script type="text/javascript" src="https://js.trulioo.com/v0.0.1-beta/main.js"></script>
+
+    <!-- This script initializes your EmbedID form -->
+    <script> 
+            // TODO: Choose how to handle the response of EmbedID after form submits
+            function handleResponse(e) { 
+              console.log('handleResponse', e); 
+            } 
+            
+            const publicKey = '<INSERT_KEY_HERE>';
+            const accessTokenURL = 'http://localhost:8080/trulioo-api/embedids/tokens';
+            new TruliooClient({ 
+              publicKey, 
+              accessTokenURL,
+              handleResponse 
+            });
+          </script>
+</body>
+</html>
